@@ -9,80 +9,65 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-
+    @State var selectedUnitIndex = 1
+    @State var weight1: Int = 1
+    @State var weight2: Int = 1
+    @State var price1String = ""
+    @State var price2String = ""
+    @State var pricePerUnit1 = 0
+    @State var pricePerUnit2 = 0
+    @State var unit1 = ""
+    @State var unit2 = ""
     var body: some View {
         NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
+            VStack {
+                GroupBox("Product #1") {
+                    Form {
+                        Section(header: Text("WEIGHT")){
+                            Picker(selection: $selectedUnitIndex, label: Text("Units")) {
+                                Text("Oz - Ounces").tag(1)
+                                Text("lb - Pounds").tag(2)
+                                Text("g - Grams").tag(3)
+                            }
+                            IntSlider()
+                        }
+                        Section(header: Text("PRICE")){
+                            TextField("Product Price", text: $price1String).keyboardType(.numberPad)
+                        }
                     }
                 }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-#if os(iOS)
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-#endif
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
+                GroupBox("Product #2") {
+                    Form {
+                        Section(header: Text("WEIGHT")){
+                            Picker(selection: $selectedUnitIndex, label: Text("Units")) {
+                                Text("Oz - Ounces").tag(1)
+                                Text("lb - Pounds").tag(2)
+                                Text("g - Grams").tag(3)
+                            }
+                            IntSlider()
+                        }
+                        Section(header: Text("PRICE")){
+                            TextField("Product Price", text: $price2String).keyboardType(.numberPad)
+                        }
                     }
                 }
-            }
-            Text("Select an item")
+                Button("CONVERT") {
+                    convertUnits(weight1: weight1, weight2: weight2, price1String: price1String, price2String: price2String, unit1: unit1, unit2: unit2, pricePerUnit1: pricePerUnit1, pricePerUnit2: pricePerUnit2)
+                    print(pricePerUnit1)
+//                    print(pricePerUnit2)
+                }
+            }.navigationBarTitle(Text("Grocery Converter"))
         }
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
+    func convertUnits(weight1: Int, weight2: Int, price1String: String, price2String: String, unit1: String, unit2: String, pricePerUnit1: Int, pricePerUnit2: Int) -> Int {
+        let price1 = Int(price1String) ?? 0
+        let price2 = Int(price2String) ?? 0
+        let pricePerUnit1 = price1 / weight1
+//    let pricePerUnit2 = price2 / weight2
+        return pricePerUnit1;
+//        return pricePerUnit2;
     }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)

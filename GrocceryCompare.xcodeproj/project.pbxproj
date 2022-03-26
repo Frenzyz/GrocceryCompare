@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220B6F5F1FBE044548CFAFB2 /* Pods_GrocceryCompare__macOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73D26DCA5BA06651D2928F88 /* Pods_GrocceryCompare__macOS_.framework */; };
+		319ABC0F519787E3935C10A6 /* Pods_GrocceryCompare__iOS_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C0F08BC1C035687270208A1 /* Pods_GrocceryCompare__iOS_.framework */; };
 		FBE8069E27EE5874000840EB /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE8069D27EE5874000840EB /* Tests_iOS.swift */; };
 		FBE806A027EE5874000840EB /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE8069F27EE5874000840EB /* Tests_iOSLaunchTests.swift */; };
 		FBE806AA27EE5874000840EB /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE806A927EE5874000840EB /* Tests_macOS.swift */; };
@@ -21,6 +23,10 @@
 		FBE806B427EE5874000840EB /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE8068627EE5871000840EB /* Persistence.swift */; };
 		FBE806B527EE5874000840EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE8068727EE5874000840EB /* Assets.xcassets */; };
 		FBE806B627EE5874000840EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBE8068727EE5874000840EB /* Assets.xcassets */; };
+		FBE806C627EE8F41000840EB /* UnitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE806C527EE8F41000840EB /* UnitAPI.swift */; };
+		FBE806C727EE8F41000840EB /* UnitAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE806C527EE8F41000840EB /* UnitAPI.swift */; };
+		FBE806C927EEB428000840EB /* IntSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE806C827EEB428000840EB /* IntSlider.swift */; };
+		FBE806CA27EEB428000840EB /* IntSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE806C827EEB428000840EB /* IntSlider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C0F08BC1C035687270208A1 /* Pods_GrocceryCompare__iOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrocceryCompare__iOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A527274E100F0F8788D9330 /* Pods-GrocceryCompare (macOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrocceryCompare (macOS).debug.xcconfig"; path = "Target Support Files/Pods-GrocceryCompare (macOS)/Pods-GrocceryCompare (macOS).debug.xcconfig"; sourceTree = "<group>"; };
+		73D26DCA5BA06651D2928F88 /* Pods_GrocceryCompare__macOS_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GrocceryCompare__macOS_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77CE1D03A560930630301632 /* Pods-GrocceryCompare (iOS).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrocceryCompare (iOS).debug.xcconfig"; path = "Target Support Files/Pods-GrocceryCompare (iOS)/Pods-GrocceryCompare (iOS).debug.xcconfig"; sourceTree = "<group>"; };
+		813AA9A16928AA18BB62F98B /* Pods-GrocceryCompare (iOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrocceryCompare (iOS).release.xcconfig"; path = "Target Support Files/Pods-GrocceryCompare (iOS)/Pods-GrocceryCompare (iOS).release.xcconfig"; sourceTree = "<group>"; };
+		9DFBE9AC42B391875A21206E /* Pods-GrocceryCompare (macOS).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrocceryCompare (macOS).release.xcconfig"; path = "Target Support Files/Pods-GrocceryCompare (macOS)/Pods-GrocceryCompare (macOS).release.xcconfig"; sourceTree = "<group>"; };
 		FBE8068327EE5871000840EB /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
 		FBE8068427EE5871000840EB /* GrocceryCompareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrocceryCompareApp.swift; sourceTree = "<group>"; };
 		FBE8068527EE5871000840EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +67,8 @@
 		FBE806A527EE5874000840EB /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE806A927EE5874000840EB /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		FBE806AB27EE5874000840EB /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+		FBE806C527EE8F41000840EB /* UnitAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitAPI.swift; sourceTree = "<group>"; };
+		FBE806C827EEB428000840EB /* IntSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntSlider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				319ABC0F519787E3935C10A6 /* Pods_GrocceryCompare__iOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220B6F5F1FBE044548CFAFB2 /* Pods_GrocceryCompare__macOS_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +105,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DFB8799AB8BAD05E040FA29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C0F08BC1C035687270208A1 /* Pods_GrocceryCompare__iOS_.framework */,
+				73D26DCA5BA06651D2928F88 /* Pods_GrocceryCompare__macOS_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFA7FEC54B94256AA5FDB132 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77CE1D03A560930630301632 /* Pods-GrocceryCompare (iOS).debug.xcconfig */,
+				813AA9A16928AA18BB62F98B /* Pods-GrocceryCompare (iOS).release.xcconfig */,
+				6A527274E100F0F8788D9330 /* Pods-GrocceryCompare (macOS).debug.xcconfig */,
+				9DFBE9AC42B391875A21206E /* Pods-GrocceryCompare (macOS).release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FBE8067C27EE5871000840EB = {
 			isa = PBXGroup;
 			children = (
@@ -97,17 +133,21 @@
 				FBE8069C27EE5874000840EB /* Tests iOS */,
 				FBE806A827EE5874000840EB /* Tests macOS */,
 				FBE8068D27EE5874000840EB /* Products */,
+				BFA7FEC54B94256AA5FDB132 /* Pods */,
+				4DFB8799AB8BAD05E040FA29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		FBE8068127EE5871000840EB /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				FBE806CC27EEBE92000840EB /* Networking */,
 				FBE8068427EE5871000840EB /* GrocceryCompareApp.swift */,
 				FBE8068527EE5871000840EB /* ContentView.swift */,
 				FBE8068627EE5871000840EB /* Persistence.swift */,
 				FBE8068727EE5874000840EB /* Assets.xcassets */,
 				FBE8068227EE5871000840EB /* GrocceryCompare.xcdatamodeld */,
+				FBE806C827EEB428000840EB /* IntSlider.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -149,6 +189,14 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		FBE806CC27EEBE92000840EB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FBE806C527EE8F41000840EB /* UnitAPI.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBE806B927EE5874000840EB /* Build configuration list for PBXNativeTarget "GrocceryCompare (iOS)" */;
 			buildPhases = (
+				1C4491FA60B6480CC1F1BF87 /* [CP] Check Pods Manifest.lock */,
 				FBE8068827EE5874000840EB /* Sources */,
 				FBE8068927EE5874000840EB /* Frameworks */,
 				FBE8068A27EE5874000840EB /* Resources */,
+				4CBFF4C685C03A338A356034 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,6 +223,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBE806BC27EE5874000840EB /* Build configuration list for PBXNativeTarget "GrocceryCompare (macOS)" */;
 			buildPhases = (
+				C9A2F5F50AE53335C35D5C31 /* [CP] Check Pods Manifest.lock */,
 				FBE8068E27EE5874000840EB /* Sources */,
 				FBE8068F27EE5874000840EB /* Frameworks */,
 				FBE8069027EE5874000840EB /* Resources */,
@@ -302,6 +353,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C4491FA60B6480CC1F1BF87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrocceryCompare (iOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CBFF4C685C03A338A356034 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrocceryCompare (iOS)/Pods-GrocceryCompare (iOS)-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GrocceryCompare (iOS)/Pods-GrocceryCompare (iOS)-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GrocceryCompare (iOS)/Pods-GrocceryCompare (iOS)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9A2F5F50AE53335C35D5C31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GrocceryCompare (macOS)-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FBE8068827EE5874000840EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -309,6 +424,8 @@
 			files = (
 				FBE806AD27EE5874000840EB /* GrocceryCompare.xcdatamodeld in Sources */,
 				FBE806B327EE5874000840EB /* Persistence.swift in Sources */,
+				FBE806C927EEB428000840EB /* IntSlider.swift in Sources */,
+				FBE806C627EE8F41000840EB /* UnitAPI.swift in Sources */,
 				FBE806AF27EE5874000840EB /* GrocceryCompareApp.swift in Sources */,
 				FBE806B127EE5874000840EB /* ContentView.swift in Sources */,
 			);
@@ -320,6 +437,8 @@
 			files = (
 				FBE806AE27EE5874000840EB /* GrocceryCompare.xcdatamodeld in Sources */,
 				FBE806B427EE5874000840EB /* Persistence.swift in Sources */,
+				FBE806CA27EEB428000840EB /* IntSlider.swift in Sources */,
+				FBE806C727EE8F41000840EB /* UnitAPI.swift in Sources */,
 				FBE806B027EE5874000840EB /* GrocceryCompareApp.swift in Sources */,
 				FBE806B227EE5874000840EB /* ContentView.swift in Sources */,
 			);
@@ -470,6 +589,7 @@
 		};
 		FBE806BA27EE5874000840EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77CE1D03A560930630301632 /* Pods-GrocceryCompare (iOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -500,6 +620,7 @@
 		};
 		FBE806BB27EE5874000840EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 813AA9A16928AA18BB62F98B /* Pods-GrocceryCompare (iOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -531,6 +652,7 @@
 		};
 		FBE806BD27EE5874000840EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A527274E100F0F8788D9330 /* Pods-GrocceryCompare (macOS).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -559,6 +681,7 @@
 		};
 		FBE806BE27EE5874000840EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DFBE9AC42B391875A21206E /* Pods-GrocceryCompare (macOS).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
